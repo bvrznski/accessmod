@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "accessmod"
 version = "1.0.0"
-description = "Declarative API visibility and cooperative access contracts for Python"
+description = "Explicit boundaries. Pythonic freedom. — Declarative access modifiers and API contracts for Python."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
