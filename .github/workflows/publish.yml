@@ -40,7 +40,7 @@ jobs:
 
     environment:
       name: pypi
-      url: https://pypi.org/project/access-modifiers/
+      url: https://pypi.org/project/accessmod/
 
     permissions:
       id-token: write
