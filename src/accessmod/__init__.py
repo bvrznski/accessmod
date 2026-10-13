@@ -154,7 +154,7 @@ class ProtectedField:
     def __set_name__(self, owner, name):
         self.name = name
         self.owner_module = owner.__module__
-        self.storage_name = f'__access_modifiers_{name}'
+        self.storage_name = f'__accessmod_{name}'
 
     def _check(self, scope):
         caller = _caller_module(3)

@@ -1,15 +1,15 @@
-# access_modifiers 1.0.0
+# accessmod 1.0.0
 
 **Explicit boundaries. Pythonic freedom.**
 
-`access_modifiers` provides declarative API contracts without pretending Python has security-grade access modifiers.
+`accessmod` provides declarative API contracts without pretending Python has security-grade access modifiers.
 
 ```bash
 pip install .
 ```
 
 ```python
-from access_modifiers import public, internal, private, protected, access_info, ProtectedField
+from accessmod import public, internal, private, protected, access_info, ProtectedField
 
 @public
 class Engine:
@@ -63,7 +63,7 @@ Static resolution is deliberately conservative; dynamic access is not covered.
 ## Protected property interface
 
 ```python
-from access_modifiers import protected_property
+from accessmod import protected_property
 
 class Engine:
     @protected_property(read="public", write="class")

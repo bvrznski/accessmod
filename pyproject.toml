@@ -3,13 +3,13 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "access_modifiers"
+name = "accessmod"
 version = "1.0.0"
 description = "Declarative API visibility and cooperative access contracts for Python"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-authors = [{name = "access_modifiers contributors"}]
+authors = [{name = "accessmod contributors"}]
 keywords = ["decorators", "api", "encapsulation", "visibility", "access-contracts"]
 classifiers = ["Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only"]
 
@@ -20,12 +20,13 @@ dev = ["pytest>=7", "build>=1"]
 where = ["src"]
 
 [tool.pytest.ini_options]
+pythonpath = ["src"]
 testpaths = ["tests"]
 
 [project.scripts]
-access-modifiers = "access_modifiers.checker:main"
+access-modifiers = "accessmod.checker:main"
 
 [project.urls]
-Homepage = "https://github.com/bvrznski/access_modifiers"
-Repository = "https://github.com/bvrznski/access_modifiers"
-Issues = "https://github.com/bvrznski/access_modifiers/issues"
+Homepage = "https://github.com/bvrznski/accessmod"
+Repository = "https://github.com/bvrznski/accessmod"
+Issues = "https://github.com/bvrznski/accessmod/issues"

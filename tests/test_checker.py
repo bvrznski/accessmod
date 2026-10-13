@@ -1,5 +1,5 @@
-from access_modifiers.checker import check_paths
-from access_modifiers import protected_property, access_info
+from accessmod.checker import check_paths
+from accessmod import protected_property, access_info
 
 def test_checker(tmp_path):
     pkg=tmp_path/'pkg';pkg.mkdir()

@@ -1,16 +1,16 @@
 import asyncio
 import inspect
 import pytest
-from access_modifiers import public, private, internal, protected, access_info, AccessViolation, ProtectedField
+from accessmod import public, private, internal, protected, access_info, AccessViolation, ProtectedField
 
 def test_public_export():
     namespace = {'__name__': 'test_dynamic'}
-    exec('from access_modifiers import public\n@public\ndef api(): pass\n', namespace)
+    exec('from accessmod import public\n@public\ndef api(): pass\n', namespace)
     assert namespace['__all__'] == ['api']
 
 def test_private_export():
     namespace = {'__name__': 'test_dynamic', '__all__': ['hidden', 'visible']}
-    exec('from access_modifiers import private\n@private\ndef hidden(): pass\n', namespace)
+    exec('from accessmod import private\n@private\ndef hidden(): pass\n', namespace)
     assert namespace['__all__'] == ['visible']
 
 def test_internal_policy():
